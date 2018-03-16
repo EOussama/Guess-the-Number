@@ -9,3 +9,14 @@ C:\Users\Eoussama\source\repos\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheN
 C:\Users\Eoussama\source\repos\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.exe
 C:\Users\Eoussama\source\repos\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.pdb
 C:\Users\Eoussama\source\repos\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.forms.fSettings.resources
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe.config
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.exe
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\bin\Debug\GuessTheNumber.pdb
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.csprojResolveAssemblyReference.cache
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.Form1.resources
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.forms.fSettings.resources
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.Properties.Resources.resources
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.csproj.GenerateResource.cache
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.csproj.CoreCompileInputs.cache
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.exe
+D:\Scripting\C#\GuessTheNumber\GuessTheNumber\obj\Debug\GuessTheNumber.pdb
