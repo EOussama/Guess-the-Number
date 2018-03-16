@@ -9,7 +9,7 @@ namespace GuessTheNumber.classes
         public static bool gameStarted = false;
         private static int number = 0;
 
-        public static bool scoreReset = false;
+        public static bool scoreReset = true;
         public static int scoreInt = 1;
         private static int score = 0;
 
@@ -41,6 +41,7 @@ namespace GuessTheNumber.classes
         {
             Random rand = new Random();
             number = rand.Next(minVal, minVal + 9);
+            Form1.lNum.Text = number.ToString();
         }
 
         public static void updateButtons()
@@ -54,7 +55,6 @@ namespace GuessTheNumber.classes
             if (input == number && gameStarted == true)
             {
                 Form1.scoreLabel.Text = (score += scoreInt).ToString();
-                btn.BackColor = Color.Green;
 
                 if (timerFreeze == true)
                     StopGame();
@@ -66,7 +66,7 @@ namespace GuessTheNumber.classes
             }
 
             else if (input != number && scoreReset == true)
-                Form1.scoreLabel.Text = "0";
+                Form1.scoreLabel.Text = (score = 0).ToString();
         }
     }
 }

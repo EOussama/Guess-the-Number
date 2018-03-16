@@ -8,7 +8,7 @@ namespace GuessTheNumber
 {
     public partial class Form1 : Form
     {
-        public static Label scoreLabel, timerLabel;
+        public static Label scoreLabel, timerLabel, lNum;
         public static Button startBtn;
         public static List<Button> buttons;
         public static Timer timer;
@@ -18,6 +18,7 @@ namespace GuessTheNumber
         {
             InitializeComponent();
 
+            lNum = this.lNumber;
             scoreLabel = this.lScorePH;
             timerLabel = this.lTimer;
             timer = this.updateTimer;
@@ -96,7 +97,10 @@ namespace GuessTheNumber
             if (Config.timerFreeze == true && (Config.timerVal == 0.0))
                 Config.StopGame();
             else if (Config.timerFreeze == false && (Config.timerVal == 0.0))
-               Config.timerVal = Config.timerInt * 1000;
+            {
+                Config.StopGame();
+                Config.StartGame();
+            }
             else
                 this.lTimer.Text = ((Config.timerVal -= 100) / 1000).ToString("0.0");
         }

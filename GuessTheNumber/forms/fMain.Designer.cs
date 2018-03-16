@@ -51,11 +51,14 @@
             this.pTimer = new System.Windows.Forms.Panel();
             this.pbTimerIcon = new System.Windows.Forms.PictureBox();
             this.lTimer = new System.Windows.Forms.Label();
+            this.pNumber = new System.Windows.Forms.Panel();
+            this.lNumber = new System.Windows.Forms.Label();
             this.msMenu.SuspendLayout();
             this.pScore.SuspendLayout();
             this.pButtons.SuspendLayout();
             this.pTimer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimerIcon)).BeginInit();
+            this.pNumber.SuspendLayout();
             this.SuspendLayout();
             // 
             // msMenu
@@ -91,7 +94,7 @@
             this.pScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pScore.Controls.Add(this.lScorePH);
             this.pScore.Controls.Add(this.lScore);
-            this.pScore.Location = new System.Drawing.Point(12, 34);
+            this.pScore.Location = new System.Drawing.Point(12, 76);
             this.pScore.Name = "pScore";
             this.pScore.Size = new System.Drawing.Size(100, 43);
             this.pScore.TabIndex = 1;
@@ -129,7 +132,7 @@
             this.pButtons.Controls.Add(this.b2);
             this.pButtons.Controls.Add(this.b1);
             this.pButtons.Controls.Add(this.b9);
-            this.pButtons.Location = new System.Drawing.Point(12, 128);
+            this.pButtons.Location = new System.Drawing.Point(12, 170);
             this.pButtons.Name = "pButtons";
             this.pButtons.Size = new System.Drawing.Size(208, 189);
             this.pButtons.TabIndex = 2;
@@ -256,7 +259,7 @@
             this.bStart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bStart.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bStart.Location = new System.Drawing.Point(12, 83);
+            this.bStart.Location = new System.Drawing.Point(12, 125);
             this.bStart.Name = "bStart";
             this.bStart.Size = new System.Drawing.Size(208, 36);
             this.bStart.TabIndex = 3;
@@ -274,7 +277,7 @@
             this.pTimer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pTimer.Controls.Add(this.pbTimerIcon);
             this.pTimer.Controls.Add(this.lTimer);
-            this.pTimer.Location = new System.Drawing.Point(120, 34);
+            this.pTimer.Location = new System.Drawing.Point(120, 76);
             this.pTimer.Name = "pTimer";
             this.pTimer.Size = new System.Drawing.Size(100, 43);
             this.pTimer.TabIndex = 2;
@@ -299,11 +302,34 @@
             this.lTimer.TabIndex = 3;
             this.lTimer.Text = "10.0";
             // 
+            // pNumber
+            // 
+            this.pNumber.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pNumber.Controls.Add(this.lNumber);
+            this.pNumber.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pNumber.Location = new System.Drawing.Point(12, 27);
+            this.pNumber.Name = "pNumber";
+            this.pNumber.Size = new System.Drawing.Size(208, 43);
+            this.pNumber.TabIndex = 4;
+            // 
+            // lNumber
+            // 
+            this.lNumber.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lNumber.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNumber.Location = new System.Drawing.Point(0, 0);
+            this.lNumber.Name = "lNumber";
+            this.lNumber.Size = new System.Drawing.Size(206, 41);
+            this.lNumber.TabIndex = 6;
+            this.lNumber.Text = "0";
+            this.lNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(232, 327);
+            this.ClientSize = new System.Drawing.Size(232, 368);
+            this.Controls.Add(this.pNumber);
             this.Controls.Add(this.pTimer);
             this.Controls.Add(this.bStart);
             this.Controls.Add(this.pButtons);
@@ -324,6 +350,7 @@
             this.pTimer.ResumeLayout(false);
             this.pTimer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimerIcon)).EndInit();
+            this.pNumber.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,6 +379,8 @@
         private System.Windows.Forms.Label lTimer;
         private System.Windows.Forms.PictureBox pbTimerIcon;
         private System.Windows.Forms.Label lScorePH;
+        private System.Windows.Forms.Panel pNumber;
+        private System.Windows.Forms.Label lNumber;
     }
 }
 
